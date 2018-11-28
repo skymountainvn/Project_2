@@ -14,12 +14,12 @@
     "server": "SET NODE_ENV=local & nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "bcrypt": "^1.0.3",
   "dependencies": {
+    "assert": "^1.4.1",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
-    "mongoose": "^5.3.13"
+    "mongoose": "^4.13.7"
   }
 }

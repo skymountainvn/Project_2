@@ -49,7 +49,6 @@ class User extends UserModel {
         return userInfo;
     }
 
-    
     static async check(idUser) {
         const user = await User.findById(idUser);
         if (!user) throw new MyError('Cannot find user.', CANNOT_FIND_USER, 404);
