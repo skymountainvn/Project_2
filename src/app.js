@@ -9,5 +9,6 @@ const app = express();
 
 app.use('/user', userRouter);
 app.use('/story', storyRouter);
+app.use('/friend', friendRouter);
 
 module.exports = app;

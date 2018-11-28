@@ -35,4 +35,5 @@ class Story extends StoryModel {
     }
 }
 
+
 module.exports = Story;
