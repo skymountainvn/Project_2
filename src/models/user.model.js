@@ -13,7 +13,10 @@ const userSchema = new Schema({
     password: { type: String, required: true, trim: true },
     name: { type: String, required: true },
     phone: { type: String, required: true },
-    stories: [{ type: Schema.Types.ObjectId, ref: 'Story' }]
+    stories: [{ type: Schema.Types.ObjectId, ref: 'Story' }],
+    incommingRequests: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+    sentRequests: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+    friends: [{ type: Schema.Types.ObjectId, ref: 'User' }]
 });
 
 const UserModel = mongoose.model('User', userSchema);
